@@ -1,0 +1,144 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    color: #353535;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    padding: 40px 20px;
+}
+
+/**** h1 ****/
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+/**** h1, footer p ****/
+
+h1,
+footer p {
+    text-align: center;
+}
+
+/**** main ****/
+
+main {
+    flex-grow: 1;
+}
+
+/**** section ****/
+
+.section {
+    padding: 100px 0;
+}
+
+.section--clip {
+    -webkit-clip-path: polygon(0 50px, 100% 0, 100% calc(100% - 50px), 0 100%);
+    clip-path: polygon(0 50px, 100% 0, 100% calc(100% - 50px), 0 100%);
+}
+
+/**** section image ****/
+
+.section--image {
+    background-image: url(img/volcan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+/**** section white ****/
+
+.section--white {
+    background-color: #ffffff;
+}
+
+/**** section gray ****/
+
+.section--gray {
+    background-color: #efefef;
+}
+
+/**** section black ****/
+
+.section--black {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.section--clip+.section--clip {
+    margin-top: -50px;
+}
+
+/**** div wrap ****/
+
+.wrap {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.wrap h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.wrap p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.wrap a {
+    padding: 12px;
+    font-weight: 600;
+    background-color: #ff5100;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.wrap a:hover {
+    opacity: 0.9;
+}
+
+
+/****div  wrap p, footer p  ****/
+
+.wrap p,
+footer p {
+    font-size: 18px;
+}
+
+/**** footer p ****/
+
+footer p {
+    font-weight: 700;
+}
