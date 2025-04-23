@@ -6,7 +6,7 @@ Création de sections inclinées en HTML5 et CSS3 via la propriété clip-path.
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/angled_background_sections/
 
 ## Projet développé avec
 
